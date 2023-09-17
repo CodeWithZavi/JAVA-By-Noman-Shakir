@@ -2,13 +2,13 @@ public class contructor{
 
        int b;
        String name;
-       contructor() // contructor (specail method) // u can display the value
+       /*contructor() // contructor (specail method) // u can display the value
        { 
             b = 0;
-            name = null;
+            name = null;   agr yeh na ho java aoutomatic add kr dega
                 
                
-       }
+       } */
        void show()
        {
               System.out.println(b+" "+name);
