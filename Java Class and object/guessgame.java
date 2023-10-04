@@ -10,7 +10,6 @@ public class guessgame{
        {
            var ran = Math.floor(10 * Math.random());
            System.out.println(+ran);
-
           
        }
           
