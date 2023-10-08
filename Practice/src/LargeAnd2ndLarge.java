@@ -8,7 +8,7 @@
  * @author ZAVIAN ~
  */
 import java.util.Scanner;
-public class MaxAndMin {
+public class LargeAnd2ndLarge {
     
         public static void main(String[] args) {
             int arr[] = new int[5];
@@ -18,7 +18,7 @@ public class MaxAndMin {
                    arr[i]= in.nextInt();
               }
               int large = 0;
-              int small=0;
+              int SecondLarge=0;
               int c=0;
               for(int i=0;i<arr.length;i++)
               {
@@ -26,13 +26,15 @@ public class MaxAndMin {
                     {
                          large = arr[i];
                     }
-                    if(arr[i]<small||c==0)
+              }
+              for(int i=0;i<arr.length;i++)
+              {
+                  if(arr[i]>SecondLarge&&arr[i]<large)
                     {
-                         small = arr[i];
-                         c++;
+                         SecondLarge = arr[i];
                     }
               }
-              System.out.println("Large number = "+large+" small = "+small);
+              System.out.println("Large number = "+large+" small = "+SecondLarge);
     }
     
 }
