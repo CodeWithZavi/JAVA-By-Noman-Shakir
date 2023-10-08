@@ -8,8 +8,15 @@ public class ThisStudentMarks {
            System.out.println("enter total marks");
            int TM = in.nextInt();
             A cal = new A();
+            A cal2 = new A();
+            A cal3 = new A();
             cal.Input(TM);
+            cal2.Input(TM);
+            cal3.Input(TM);
             cal.DisplayInfo(TM);
+            cal2.DisplayInfo(TM);
+            cal3.DisplayInfo(TM);
+             
       }
 }
 class A{
@@ -33,8 +40,8 @@ class A{
 void DisplayInfo(int TM)
 {
       System.out.printf("\n");
-       System.out.println("Student Obatained "+total+" out of "+TM);
-       System.out.println("Averge  = "+average);
+       System.out.println("Student Obatained "+this.total+" out of "+TM);
+       System.out.println("Averge  = "+this.average);
 }
 }
 
