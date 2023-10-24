@@ -1,6 +1,5 @@
           // Number format Exception
-public class TryAndCatch {
-    
+public class TryAndCatch { 
    public static void main(String[] args) {
           try{
               int c = 12%0;  // yeh exception ha hamrea pass
