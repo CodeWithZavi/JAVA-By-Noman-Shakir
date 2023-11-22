@@ -1,5 +1,5 @@
 
-public class privclass {
+public class StaticMethod1{
     
      int number;
      String name;
