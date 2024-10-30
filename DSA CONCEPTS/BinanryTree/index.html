@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXORUS Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding-top: 10px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .card-deal {
+            margin-bottom: 20px;
+        }
+
+        .recently-viewed,
+        .suggestions {
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+
+        .recently-viewed img,
+        .suggestions img {
+            width: 100%;
+        }
+
+        .deals-of-the-day h2 {
+            margin-top: 30px;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+        }
+
+        .timer {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/100x30" alt="PIXORUS Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Add Nav Items here -->
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search product" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diego Morata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Traditional Wear</a>
+                    <a href="#" class="list-group-item list-group-item-action">Western Wear</a>
+                    <a href="#" class="list-group-item list-group-item-action">Swim & Beachwear</a>
+                    <a href="#" class="list-group-item list-group-item-action">Winter & Seasonal Wear</a>
+                    <a href="#" class="list-group-item list-group-item-action">Beauty & Grooming</a>
+                    <a href="#" class="list-group-item list-group-item-action">Jewellery</a>
+                    <a href="#" class="list-group-item list-group-item-action">Personal Care Appliances</a>
+                    <a href="#" class="list-group-item list-group-item-action">International Brands</a>
+                    <a href="#" class="list-group-item list-group-item-action">Foot Wear</a>
+                    <a href="#" class="list-group-item list-group-item-action">Watches</a>
+                    <a href="#" class="list-group-item list-group-item-action">Accessories</a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 main-content">
+                <div class="row">
+                    <!-- Main Offer -->
+                    <div class="col-md-8">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Biggest Offer Revealed
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MORE DEALS INSIDE UP TO 50% OFF</h5>
+                                <a href="#" class="btn btn-primary">Wishlist Now</a>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="card card-deal">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Handbag Deal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UP TO 30% OFF</h5>
+                                        <p class="card-text">For all hand purses</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-deal">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Watch Deal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EXPLORE</h5>
+                                        <p class="card-text">The biggest discount</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-deal">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Lamp Deal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">DON'T MISS</h5>
+                                        <p class="card-text">The year-end sell</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recently Viewed and Suggestions -->
+                    <div class="col-md-4">
+                        <div class="recently-viewed mb-3">
+                            <h5>Recently Viewed</h5>
+                            <img src="https://via.placeholder.com/150" alt="Orange Bag">
+                            <p class="mt-2">See your browsing history</p>
+                        </div>
+                        <div class="suggestions">
+                            <h5>Suggestions for You</h5>
+                            <img src="https://via.placeholder.com/150" alt="Backpack">
+                            <p class="mt-2">Watch more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deals of the Day -->
+                <div class="deals-of-the-day">
+                    <h2>Deals of the Day <span class="timer">20 : 45 : 12</span></h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top"
+                                    alt="Red leather GUCCI bag">
+                                <div class="card-body">
+                                    <h5 class="card-title">Red leather GUCCI bag</h5>
+                                    <p class="card-text">4500 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top" alt="LEXIR face cream">
+                                <div class="card-body">
+                                    <h5 class="card-title">LEXIR face cream</h5>
+                                    <p class="card-text">300 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top"
+                                    alt="Fuji Film DSLR camera">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fuji Film DSLR camera</h5>
+                                    <p class="card-text">35000 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top"
+                                    alt="Sky blue kids shoe">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sky blue kids shoe</h5>
+                                    <p class="card-text">900 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top"
+                                    alt="Brown leather wallet">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brown leather wallet</h5>
+                                    <p class="card-text">1100 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Black sunglasses">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black sunglasses</h5>
+                                    <p class="card-text">990 ₹</p>
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
